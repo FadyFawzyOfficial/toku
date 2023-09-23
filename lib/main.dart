@@ -1,10 +1,20 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(const App());
+import 'screens/home_screen.dart';
 
-class App extends StatelessWidget {
-  const App({super.key});
+void main() => runApp(const Toku());
+
+class Toku extends StatelessWidget {
+  const Toku({super.key});
 
   @override
-  Widget build(context) => const MaterialApp();
+  Widget build(context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        scaffoldBackgroundColor: const Color(0xFFFEF6DB),
+      ),
+      home: const HomeScreen(),
+    );
+  }
 }
