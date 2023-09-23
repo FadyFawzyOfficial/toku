@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../widgets/category_item.dart';
+import 'numbers_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -12,24 +13,33 @@ class HomeScreen extends StatelessWidget {
         backgroundColor: const Color(0xFF46322B),
         title: const Text('Toku'),
       ),
-      body: const Column(
+      body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           CategoryItem(
             label: 'Numbers',
             color: Colors.amber,
+            onTap: () => Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const NumbersScreen(),
+              ),
+            ),
           ),
           CategoryItem(
             label: 'Family Members',
             color: Colors.green,
+            onTap: () {},
           ),
           CategoryItem(
             label: 'Colors',
             color: Colors.purple,
+            onTap: () {},
           ),
           CategoryItem(
             label: 'Phrases',
             color: Colors.blue,
+            onTap: () {},
           ),
         ],
       ),
