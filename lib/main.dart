@@ -13,6 +13,7 @@ class Toku extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         scaffoldBackgroundColor: const Color(0xFFFEF6DB),
+        appBarTheme: const AppBarTheme(color: Colors.brown),
       ),
       home: const HomeScreen(),
     );

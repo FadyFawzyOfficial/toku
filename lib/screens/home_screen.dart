@@ -9,10 +9,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: const Color(0xFF46322B),
-        title: const Text('Toku'),
-      ),
+      appBar: AppBar(title: const Text('Toku')),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [

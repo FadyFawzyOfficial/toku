@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/word_list_tile.dart';
+
 class NumbersScreen extends StatelessWidget {
   const NumbersScreen({super.key});
 
@@ -8,6 +10,11 @@ class NumbersScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Numbers'),
+      ),
+      body: ListView(
+        children: const [
+          WordListTile(),
+        ],
       ),
     );
   }
