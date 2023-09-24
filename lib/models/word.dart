@@ -1,3 +1,5 @@
+import 'package:audioplayers/audioplayers.dart' show AudioPlayer, AssetSource;
+
 class Word {
   final String? image;
   final String japanese;
@@ -10,6 +12,8 @@ class Word {
     required this.english,
     required this.sound,
   });
+
+  void playSound() => AudioPlayer().play(AssetSource(sound));
 }
 
 const List<Word> numbers = [

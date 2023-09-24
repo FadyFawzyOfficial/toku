@@ -1,4 +1,3 @@
-import 'package:audioplayers/audioplayers.dart' show AudioPlayer, AssetSource;
 import 'package:flutter/material.dart';
 
 import '../models/word.dart';
@@ -16,7 +15,7 @@ class WordListTile extends StatelessWidget {
       title: Text(word.japanese),
       subtitle: Text(word.english),
       trailing: IconButton(
-        onPressed: () => AudioPlayer().play(AssetSource(word.sound)),
+        onPressed: word.playSound,
         icon: const Icon(Icons.play_arrow),
       ),
     );
