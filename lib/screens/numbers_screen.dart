@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../models/word.dart';
-import '../widgets/word_list_tile.dart';
+import '../widgets/words_list_view.dart';
 
 class NumbersScreen extends StatelessWidget {
   const NumbersScreen({super.key});
@@ -12,12 +12,7 @@ class NumbersScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Numbers'),
       ),
-      body: ListView.builder(
-        padding: EdgeInsets.zero,
-        physics: const ClampingScrollPhysics(),
-        itemCount: numbers.length,
-        itemBuilder: (context, index) => WordListTile(word: numbers[index]),
-      ),
+      body: const WordsListView(words: numbers),
     );
   }
 }
