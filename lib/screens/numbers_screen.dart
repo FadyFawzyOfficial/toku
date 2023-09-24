@@ -9,9 +9,8 @@ class NumbersScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Numbers'),
-      ),
+      backgroundColor: Colors.amber,
+      appBar: AppBar(title: const Text('Numbers')),
       body: const WordsListView(words: numbers),
     );
   }

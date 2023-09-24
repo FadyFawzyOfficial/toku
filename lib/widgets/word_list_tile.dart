@@ -10,7 +10,6 @@ class WordListTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      tileColor: Colors.amber,
       iconColor: Colors.white,
       contentPadding: const EdgeInsetsDirectional.all(0),
       leading: word.image == null ? null : Image.asset(word.image!),
