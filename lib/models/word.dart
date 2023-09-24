@@ -137,3 +137,42 @@ const List<Word> familyMembers = [
     image: 'assets/images/family_members/family_younger_sister.png',
   ),
 ];
+
+const colors = [
+  Word(
+    english: 'black',
+    japanese: 'Burakku',
+    sound: 'sounds/colors/black.wav',
+    image: 'assets/images/colors/color_black.png',
+  ),
+  Word(
+    english: 'brown',
+    japanese: 'Chairo',
+    sound: 'sounds/colors/brown.wav',
+    image: 'assets/images/colors/color_brown.png',
+  ),
+  Word(
+    english: 'dusty yellow',
+    japanese: 'Hokori ppoi kiiro',
+    sound: 'sounds/colors/dusty_yellow.wav',
+    image: 'assets/images/colors/color_dusty_yellow.png',
+  ),
+  Word(
+    english: 'gray',
+    japanese: 'Gurē',
+    sound: 'sounds/colors/gray.wav',
+    image: 'assets/images/colors/color_gray.png',
+  ),
+  Word(
+    english: 'green',
+    japanese: 'Midori',
+    sound: 'sounds/colors/green.wav',
+    image: 'assets/images/colors/color_green.png',
+  ),
+  Word(
+    english: 'red',
+    japanese: 'Aka',
+    sound: 'sounds/colors/red.wav',
+    image: 'assets/images/colors/color_red.png',
+  ),
+];
