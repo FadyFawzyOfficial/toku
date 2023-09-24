@@ -4,6 +4,7 @@ import '../widgets/category_item.dart';
 import 'colors_screen.dart';
 import 'family_members_screen.dart';
 import 'numbers_screen.dart';
+import 'phrases_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -48,7 +49,12 @@ class HomeScreen extends StatelessWidget {
           CategoryItem(
             label: 'Phrases',
             color: Colors.blue,
-            onTap: () {},
+            onTap: () => Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const PhrasesScreen(),
+              ),
+            ),
           ),
         ],
       ),
