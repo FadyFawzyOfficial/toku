@@ -11,7 +11,7 @@ class FamilyMembersScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.green,
       appBar: AppBar(title: const Text('Family Members')),
-      body: const WordsListView(words: numbers),
+      body: const WordsListView(words: familyMembers),
     );
   }
 }

@@ -74,3 +74,66 @@ const List<Word> numbers = [
     image: 'assets/images/numbers/number_ten.png',
   ),
 ];
+
+const List<Word> familyMembers = [
+  Word(
+    english: 'father',
+    japanese: 'Chichioya',
+    sound: 'sounds/family_members/father.wav',
+    image: 'assets/images/family_members/family_father.png',
+  ),
+  Word(
+    english: 'mother',
+    japanese: 'Hahaoya',
+    sound: 'sounds/family_members/mother.wav',
+    image: 'assets/images/family_members/family_mother.png',
+  ),
+  Word(
+    english: 'son',
+    japanese: 'Musuko',
+    sound: 'sounds/family_members/son.wav',
+    image: 'assets/images/family_members/family_son.png',
+  ),
+  Word(
+    english: 'daughter',
+    japanese: 'Musume',
+    sound: 'sounds/family_members/daughter.wav',
+    image: 'assets/images/family_members/family_daughter.png',
+  ),
+  Word(
+    english: 'grand father',
+    japanese: 'Ojīsan',
+    sound: 'sounds/family_members/grandfather.wav',
+    image: 'assets/images/family_members/family_grandfather.png',
+  ),
+  Word(
+    english: 'grand mother',
+    japanese: 'Sobo',
+    sound: 'sounds/family_members/grandmother.wav',
+    image: 'assets/images/family_members/family_grandmother.png',
+  ),
+  Word(
+    english: 'older brother',
+    japanese: 'Nīsan',
+    sound: 'sounds/family_members/older_brother.wav',
+    image: 'assets/images/family_members/family_older_brother.png',
+  ),
+  Word(
+    english: 'older sister',
+    japanese: 'Ane',
+    sound: 'sounds/family_members/older_sister.wav',
+    image: 'assets/images/family_members/family_older_sister.png',
+  ),
+  Word(
+    english: 'younger brother',
+    japanese: 'Otōto',
+    sound: 'sounds/family_members/younger_brother.wav',
+    image: 'assets/images/family_members/family_younger_brother.png',
+  ),
+  Word(
+    english: 'younger sister',
+    japanese: 'Imōto',
+    sound: 'sounds/family_members/younger_sister.wav',
+    image: 'assets/images/family_members/family_younger_sister.png',
+  ),
+];
