@@ -13,48 +13,28 @@ class HomeScreen extends StatelessWidget {
   Widget build(context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Toku')),
-      body: Column(
+      body: const Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           CategoryItem(
             label: 'Numbers',
             color: Colors.amber,
-            onTap: () => Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => const NumbersScreen(),
-              ),
-            ),
+            screen: NumbersScreen(),
           ),
           CategoryItem(
             label: 'Family Members',
             color: Colors.green,
-            onTap: () => Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => const FamilyMembersScreen(),
-              ),
-            ),
+            screen: FamilyMembersScreen(),
           ),
           CategoryItem(
             label: 'Colors',
             color: Colors.purple,
-            onTap: () => Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => const ColorsScreen(),
-              ),
-            ),
+            screen: ColorsScreen(),
           ),
           CategoryItem(
             label: 'Phrases',
             color: Colors.blue,
-            onTap: () => Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => const PhrasesScreen(),
-              ),
-            ),
+            screen: PhrasesScreen(),
           ),
         ],
       ),

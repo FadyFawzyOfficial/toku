@@ -3,13 +3,13 @@ import 'package:flutter/material.dart';
 class CategoryItem extends StatelessWidget {
   final String label;
   final Color color;
-  final VoidCallback onTap;
+  final Widget screen;
 
   const CategoryItem({
     super.key,
     required this.label,
     required this.color,
-    required this.onTap,
+    required this.screen,
   });
 
   @override
@@ -17,7 +17,10 @@ class CategoryItem extends StatelessWidget {
     return Material(
       color: color,
       child: InkWell(
-        onTap: onTap,
+        onTap: () => Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => screen),
+        ),
         child: Container(
           height: 64,
           padding: const EdgeInsetsDirectional.only(start: 24),
