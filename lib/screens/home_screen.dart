@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:toku/screens/family_members_screen.dart';
 
 import '../widgets/category_item.dart';
+import 'colors_screen.dart';
+import 'family_members_screen.dart';
 import 'numbers_screen.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -37,7 +38,12 @@ class HomeScreen extends StatelessWidget {
           CategoryItem(
             label: 'Colors',
             color: Colors.purple,
-            onTap: () {},
+            onTap: () => Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const ColorsScreen(),
+              ),
+            ),
           ),
           CategoryItem(
             label: 'Phrases',
