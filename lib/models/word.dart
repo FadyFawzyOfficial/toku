@@ -176,3 +176,51 @@ const colors = [
     image: 'assets/images/colors/color_red.png',
   ),
 ];
+
+const phrases = [
+  Word(
+    english: 'What\'s your name?',
+    japanese: 'Anata no namae wa nanidesu ka?',
+    sound: 'sounds/phrases/what_is_your_name.wav',
+  ),
+  Word(
+    english: 'How are you feeling?',
+    japanese: 'Go kibun wa ikagadesu ka?',
+    sound: 'sounds/phrases/how_are_you_feeling.wav',
+  ),
+  Word(
+    english: 'Where are you going?',
+    japanese: 'Doko ni iku no?',
+    sound: 'sounds/phrases/where_are_you_going.wav',
+  ),
+  Word(
+    english: 'Are you coming?',
+    japanese: 'Kimasu ka?',
+    sound: 'sounds/phrases/are_you_coming.wav',
+  ),
+  Word(
+    english: 'Yes, I\'m coming.',
+    japanese: 'Hai, ikimasu.',
+    sound: 'sounds/phrases/yes_im_coming.wav',
+  ),
+  Word(
+    english: 'I love anime!!',
+    japanese: 'Watashi wa anime ga daisukidesu!!',
+    sound: 'sounds/phrases/i_love_anime.wav',
+  ),
+  Word(
+    english: 'I love programming :)',
+    japanese: 'Watashi wa Puroguramingu ga daisukidesu :)',
+    sound: 'sounds/phrases/i_love_programming.wav',
+  ),
+  Word(
+    english: 'Programming is easy.',
+    japanese: 'Puroguramingu wa kantandesu.',
+    sound: 'sounds/phrases/programming_is_easy.wav',
+  ),
+  Word(
+    english: 'Don\'t forget to subscribe!',
+    japanese: 'Kōdoku suru koto o wasurenaide kudasai!',
+    sound: 'sounds/phrases/dont_forget_to_subscribe.wav',
+  ),
+];
